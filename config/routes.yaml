@@ -1,0 +1,20 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+index:
+  path: /
+  controller: App\Controller\TestController::test
+  
+# defaults: {_controller: 'App\Controller\TestController::test'}
+
+
+api_short:
+  path: /api/short
+  defaults: {_controller: 'App\Controller\ApiShortController::index'}
+  methods:    POST
+  
+api_redirect:
+  path: /api/redirect/{token}
+  defaults: {_controller: 'App\Controller\ApiRedirectController::index'}
+  methods:    GET    
