@@ -17,7 +17,7 @@ class ApiShortController extends Controller
 			$array = json_decode($json, true);
 			
 			
-			throw new \Exception('error empty array');
+//			throw new \Exception('error empty array');
 			
 			if (is_array($array))
 			{
